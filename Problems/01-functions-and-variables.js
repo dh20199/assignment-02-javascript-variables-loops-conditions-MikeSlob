@@ -31,7 +31,7 @@
  * @returns {string} should be exactly "Hello!"
  */
 function hello () {
-  return "Hello!";
+  return 'Hello!';
   // if you want you can declare a string variable first
   // or in this case you can just return the string directly
   // with something like "return 'Hello!'"
@@ -47,8 +47,8 @@ function hello () {
  * @returns {string} a sentence that uses NAME i nits construction.
  */
 function greeting(name) {
-  let parting = "Hello, " + name + "!";
-  return parting;
+  let x = "Hello, " + name + "!";
+  return x;
   // use the '+' operator to combine
   // strings.  So for instance, if I wanted to
   // say goodbye, I might write
@@ -88,6 +88,8 @@ function returnArray (first, second, third) {
  * @returns {string} a sentence  composed from the first 3 elements of the array
  */
 function splitArray (thisArray) {
+  let x = thisArray[0] + " " + thisArray[1] + " was a " + thisArray[2] + ".";
+  return x
   // remember you can access individual elements of an array with
   // array[0]
   // array[1]
