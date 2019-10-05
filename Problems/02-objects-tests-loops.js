@@ -104,11 +104,10 @@ function objectToSentence (obj) {
  */
 function wasWriter (obj) {
   if (obj.profession.toLowerCase() === 'novelist') {
-    let output = obj.firstName + ' ' + obj.lastName + ' was a writer.';
+    return obj.firstName + ' ' + obj.lastName + ' was a writer.';
   } else {
-    let output = obj.firstName + ' ' + obj.lastName + ' was not a writer.';
+    return obj.firstName + ' ' + obj.lastName + ' was not a writer.';
   }
-  return output;
   // in an if/else statement
   // it is acceptable to put the
   // "return" statement inside the conditional braces
