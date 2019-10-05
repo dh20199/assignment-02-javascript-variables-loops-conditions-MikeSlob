@@ -130,12 +130,10 @@ function wasWriter (obj) {
  * @param {number} aNumber
  * @returns {string}
  */
-function stringIterator (aString, aNumber) {
-  let output = ''; 
-  for (let i in aNumber) {
-    output + aString;
+// function stringIterator (aString, aNumber) {
+//   for (let i in aNumber) {
+//     return aString;
   }
-  return output; 
   // remember a basic "for" loop has this structure:
   // for (var i = 0; i< SOMETHING; i++) {...statements...  };
 }
@@ -205,6 +203,9 @@ function prettyIterator (aString, aNumber) {
  * @returns {string} 
  */
 function computeReign (pm) {
+  let time = pm.to - pm.from;
+  output = pm.fullName + "'s reign was " + time + " years long.";
+  return output;
   // declare a variable, setting it equal to the
   // length of reign. Now declare another variable,
   // and construct the desired sentence using the appropriate
