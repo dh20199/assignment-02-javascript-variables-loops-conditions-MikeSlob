@@ -118,9 +118,11 @@ function subtract(number1, number2) {
 // "I can only subtract numbers."
 
 function carefulSubtract (first, second) {
-  if (first === Number) and (second === Number) {
+  if (first === Number, second === Number) {
     output = first - second;
-    else output = "I can only subtract numbers.";
+  } else {
+    (output = "I can only subtract numbers.");
+  }
   return output
   // test to be sure that both first and second are numbers.
   // if so, return the result. Otherwise, return the string
