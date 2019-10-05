@@ -20,6 +20,15 @@
  * @returns {object} should have the properties FIRSTNAME, LASTNAME, and PROFESSION
  */
 function returnObject (first, last, prof) {
+  var output = {firstName: first, lastName: last, profession: prof};
+  return output;
+  // var output = { 
+  //   firstName: first,
+  //   lastName: last,
+  //   profession: prof
+  // };
+  // return output;
+
   // it might be easiest here to declare a variable
   // var o = {};
   // and then add properties to it one by one
@@ -56,13 +65,14 @@ function returnObject (first, last, prof) {
  * @returns {string} a sentence constructed from the object parameters 
  */
 function objectToSentence (obj) {
+  let output = obj.firstName + ' ' + obj.lastName + ' was a ' + obj.profession + '.';
   // remember you can refer to object properties using either of 2 methods
   // obj['propertyname']
   // or
   // obj.propertyname
   // note the quotes in the first options
   // also note: you need to change this next line!!
-  return 'RETURNVALUE';
+  return output;
 }
 
 
