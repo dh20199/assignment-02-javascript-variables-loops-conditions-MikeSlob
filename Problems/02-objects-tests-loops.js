@@ -106,11 +106,8 @@ function wasWriter (obj) {
   if (obj.profession.toLowerCase() === 'novelist') {
     let output = obj.firstName + ' ' + obj.lastName + ' was a writer.';
   } else {
-    if (obj.profession.toLowerCase() === 'writer') {
-      let output = obj.firstName + ' ' + obj.lastName + ' was a writer.';
-    } else {
-      let output = obj.firstName + ' ' + obj.lastName + ' was not a writer.';
-    }
+    let output = obj.firstName + ' ' + obj.lastName + ' was not a writer.';
+  }
   return output;
   // in an if/else statement
   // it is acceptable to put the
