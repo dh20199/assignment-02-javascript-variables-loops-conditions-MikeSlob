@@ -47,8 +47,8 @@ function hello () {
  * @returns {string} a sentence that uses NAME i nits construction.
  */
 function greeting(name) {
-  let x = "Hello, " + name + "!";
-  return x;
+  let output = "Hello, " + name + "!";
+  return output;
   // use the '+' operator to combine
   // strings.  So for instance, if I wanted to
   // say goodbye, I might write
@@ -67,8 +67,8 @@ function greeting(name) {
  * @returns {array} 
  */
 function returnArray (first, second, third) {
-  let x = [first, second, third];
-  return x;
+  let output = [first, second, third];
+  return output;
   // you can define the array using "new Array ()" or just "[ , , ]"
   // don't forget to return it
 }
@@ -88,8 +88,8 @@ function returnArray (first, second, third) {
  * @returns {string} a sentence  composed from the first 3 elements of the array
  */
 function splitArray (thisArray) {
-  let x = thisArray[0] + " " + thisArray[1] + " was a " + thisArray[2] + ".";
-  return x
+  let output = thisArray[0] + " " + thisArray[1] + " was a " + thisArray[2] + ".";
+  return output
   // remember you can access individual elements of an array with
   // array[0]
   // array[1]
@@ -107,6 +107,8 @@ function splitArray (thisArray) {
  * @returns {number} the difference of the two parameters
  */
 function subtract(number1, number2) {
+  let output = number1 - number1;
+  return output;
   // subtract number2 from number1, and return the result.
 }
 
@@ -116,6 +118,10 @@ function subtract(number1, number2) {
 // "I can only subtract numbers."
 
 function carefulSubtract (first, second) {
+  if (first === Number) and (second === Number) {
+    output = first - second;
+    else output = "I can only subtract numbers.";
+  return output
   // test to be sure that both first and second are numbers.
   // if so, return the result. Otherwise, return the string
   // "I can only subtract numbers."
