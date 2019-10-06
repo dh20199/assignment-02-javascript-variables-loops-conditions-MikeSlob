@@ -47,7 +47,7 @@ function hello () {
  * @returns {string} a sentence that uses NAME i nits construction.
  */
 function greeting(name) {
-  let output = "Hello, " + name + "!";
+  let output = 'Hello, ' + name + '!';
   return output;
   // use the '+' operator to combine
   // strings.  So for instance, if I wanted to
@@ -88,8 +88,8 @@ function returnArray (first, second, third) {
  * @returns {string} a sentence  composed from the first 3 elements of the array
  */
 function splitArray (thisArray) {
-  let output = thisArray[0] + " " + thisArray[1] + " was a " + thisArray[2] + ".";
-  return output
+  let output = thisArray[0] + ' ' + thisArray[1] + ' was a ' + thisArray[2] + '.';
+  return output;
   // remember you can access individual elements of an array with
   // array[0]
   // array[1]
@@ -119,11 +119,10 @@ function subtract(number1, number2) {
 
 function carefulSubtract (first, second) {
   if (typeof(first) + typeof(second) === 'numbernumber') {
-    output = first - second;
+    return first - second;
   } else {
-    output = "I can only subtract numbers.";
+    return 'I can only subtract numbers.';
   }
-  return output
   // test to be sure that both first and second are numbers.
   // if so, return the result. Otherwise, return the string
   // "I can only subtract numbers."
@@ -145,19 +144,19 @@ function carefulSubtract (first, second) {
  */
 function typeTester (unknown) {
   if (typeof(unknown) === 'string') {
-    output = unknown + " yay!";
+    let output = unknown + " yay!";
   } else {
     if (typeof(unknown) === 'number') {
-      output = unknown * unknown;
+      let output = unknown * unknown;
     } else {
       if (typeof(unknown) === 'null') {
-        output = "sorry, I can't do anything with a null value."
+        let output = "sorry, I can't do anything with a null value.";
       } else {
-        output - "I don't know how to use that kind of variable."
+        let output = "I don't know how to use that kind of variable.";
       }
     }
   }
-  return output
+  return output;
   // use an if/else construction, a switch/case , or any other branching logic. Remember to
   // return a value. 
 }
