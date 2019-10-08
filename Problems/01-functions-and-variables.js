@@ -143,19 +143,21 @@ function carefulSubtract (first, second) {
  * @returns {} a meessage about unknown, or the square of unknown if it is a number
  */
 function typeTester (unknown) {
+  let output = '';
   if (typeof(unknown) === 'string') {
-    return unknown + " yay!";
+    output += unknown + " yay!";
   } else {
     if (typeof(unknown) === 'number') {
-      return unknown * unknown;
+      output += unknown * unknown;
     } else {
       if (typeof(unknown) === 'null') {
-        return "sorry, I can't do anything with a null value.";
+        output += "sorry, I can't do anything with a null value.";
       } else {
-        return "I don't know how to use that kind of variable.";
+        output += "I don't know how to use that kind of variable.";
       }
     }
   }
+  return output;
   // use an if/else construction, a switch/case , or any other branching logic. Remember to
   // return a value. 
 }
