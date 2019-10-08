@@ -20,7 +20,9 @@
  * @returns {object} should have the properties FIRSTNAME, LASTNAME, and PROFESSION
  */
 function returnObject (first, last, prof) {
-  var output = {firstName: first, lastName: last, profession: prof};
+  var output = {firstName: first + ' /n',
+    lastName: last + ' /n', 
+    profession: prof};
   return output;
   // var output = { 
   //   firstName: first,
