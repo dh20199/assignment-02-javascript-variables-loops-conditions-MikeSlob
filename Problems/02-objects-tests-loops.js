@@ -137,10 +137,10 @@ function wasWriter (obj) {
 // function stringIterator (aString, aNumber) {
 //   for (let i in aNumber) {
 //     return aString;
-  }
-  // remember a basic "for" loop has this structure:
-  // for (var i = 0; i< SOMETHING; i++) {...statements...  };
-}
+// }
+// remember a basic "for" loop has this structure:
+// for (var i = 0; i< SOMETHING; i++) {...statements...  };
+// }
 
 
 // Problem 5
@@ -208,7 +208,7 @@ function prettyIterator (aString, aNumber) {
  */
 function computeReign (pm) {
   let time = pm.to - pm.from;
-  output = pm.fullName + "'s reign was " + time + " years long.";
+  let output = pm.fullName + "'s reign was " + time + " years long.";
   return output;
   // declare a variable, setting it equal to the
   // length of reign. Now declare another variable,
