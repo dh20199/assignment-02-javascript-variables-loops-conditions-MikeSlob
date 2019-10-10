@@ -189,8 +189,7 @@ function prettyIterator (aString, aNumber) {
 // you assign the object to a variable, and then
 // pass the variable to the function
 // e.g.
-// var willy = {
-//    fullName : "Wilfred Laurier",
+// var willy = {//    fullName : "Wilfred Laurier",
 //    party    : "Liberal",
 //    from     : 1896,
 //    to       : 1911
@@ -208,7 +207,7 @@ function prettyIterator (aString, aNumber) {
  */
 function computeReign (pm) {
   let time = pm.to - pm.from;
-  let output = pm.fullName + "'s reign was " + time + " years long.";
+  let output = pm.fullName + `'s reign was " + time + " years long.`;
   return output;
   // declare a variable, setting it equal to the
   // length of reign. Now declare another variable,
