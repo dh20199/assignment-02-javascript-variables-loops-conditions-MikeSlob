@@ -20,8 +20,8 @@
  * @returns {object} should have the properties FIRSTNAME, LASTNAME, and PROFESSION
  */
 function returnObject (first, last, prof) {
-  var output = {firstName: first + ' /n',
-    lastName: last + ' /n', 
+  var output = {firstName: first,
+    lastName: last, 
     profession: prof};
   return output;
   // var output = { 
@@ -207,7 +207,7 @@ function prettyIterator (aString, aNumber) {
  */
 function computeReign (pm) {
   let time = pm.to - pm.from;
-  let output = pm.fullName + `'s reign was " + time + " years long.`;
+  let output = pm.fullName + `'` + `s reign was ` + time + ` years long.`;
   return output;
   // declare a variable, setting it equal to the
   // length of reign. Now declare another variable,
