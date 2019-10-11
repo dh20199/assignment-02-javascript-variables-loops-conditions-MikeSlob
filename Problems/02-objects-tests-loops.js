@@ -134,13 +134,13 @@ function wasWriter (obj) {
  * @param {number} aNumber
  * @returns {string}
  */
-// function stringIterator (aString, aNumber) {
-//   for (let i in aNumber) {
-//     return aString;
-// }
+function stringIterator (aString, aNumber) {
+  for (let i in aNumber) {
+    return aString;
+}
 // remember a basic "for" loop has this structure:
 // for (var i = 0; i< SOMETHING; i++) {...statements...  };
-// }
+}
 
 
 // Problem 5
