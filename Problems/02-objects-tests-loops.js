@@ -277,9 +277,9 @@ function computeReign (pm) {
 function sentences(list) {
   let output = '';
   var i;
-  for (i = 0; i <length(list); i++) {
+  for (i = 0; i < list.length; i++) {
     let time = list[i].to - list[i].from;
-    output += list[i].fullName + '\'s reign was ' + time + ' years long.';
+    output += list[i].fullName + '\'s reign was ' + time + ' years long.' + '\n';
   }
   return output;
   // Hint: "ministers" is an ARRAY of OBJECTS. The simplest way to solve this problem
