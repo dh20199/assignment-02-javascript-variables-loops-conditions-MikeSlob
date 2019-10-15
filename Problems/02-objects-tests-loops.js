@@ -169,6 +169,10 @@ function stringIterator (aString, aNumber) {
  * @returns   {string}
  */
 function prettyIterator (aString, aNumber) {
+  var i;
+  for (i = 0; i < aNumber; i++) {
+    console.log(aString(i));
+  }
   // be sure to check your results on this one; it has a trick. maybe 2. 
 }
 
