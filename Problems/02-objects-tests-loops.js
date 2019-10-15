@@ -138,7 +138,7 @@ function stringIterator (aString, aNumber) {
   let output = '';
   var i;
   for (i = 0; i < aNumber; i++) {
-    output =+ aString;
+    output += aString;
   }
   return output;
 }
