@@ -152,7 +152,7 @@ function typeTester (unknown) {
     if (typeof(unknown) === 'number') {
       output += unknown * unknown;
     } else {
-      if (typeof(unknown) === 'null') {
+      if (typeof(unknown) === 'undefined') {
         output += "sorry, I can't do anything with a null value.";
       } else {
         output += "I don't know how to use that kind of variable.";
