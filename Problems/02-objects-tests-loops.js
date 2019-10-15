@@ -275,6 +275,13 @@ function computeReign (pm) {
  *  the properties of the individual objects comprising `list`
  */
 function sentences(list) {
+  let output = '';
+  var i;
+  for (i = 0; i <length(list); i++) {
+    let time = list[i].to - list[i].from;
+    output += list[i].fullName + '\'s reign was ' + time + ' years long.';
+  }
+  return output;
   // Hint: "ministers" is an ARRAY of OBJECTS. The simplest way to solve this problem
   // is to use the "for...of" loop syntax to loop through the array,
   // and the object[attribute] or object.attribute reference format to access
